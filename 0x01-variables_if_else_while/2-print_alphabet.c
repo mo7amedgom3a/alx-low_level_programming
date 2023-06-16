@@ -2,7 +2,7 @@
 
 /**
  * main : Entry point
- * description : alphabet from a to z
+ * discription : print all alphabet
  * Return: Always 0 (Success)
 */
 
