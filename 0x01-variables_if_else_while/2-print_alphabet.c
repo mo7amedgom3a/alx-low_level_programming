@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
- * main : Entry point
+ * main -  Entry point
+ *
  * discription : print all alphabet
+ *
  * Return: Always 0 (Success)
 */
 
