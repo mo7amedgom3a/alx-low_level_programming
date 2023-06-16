@@ -2,14 +2,19 @@
 
 /**
  * main : Entry point
- * description - print all  alphabet
+ * description - print all  alphabet from a to z
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	for (int i = 97 ; i <= 122 ; i++)
-	putchar(i);
+	char ch = 'a';
+
+	while (ch <= 'z')
+	{
+	putchar(ch);
+	ch++;
+	}
 	putchar('\n');
 	return (0);
 }
