@@ -6,28 +6,30 @@
  * Return: Always 0.
  */
 int main(void)
-{
-	int digit1, digit2, digit3;
-
-	for (digit1 = 0; digit1 < 8; digit1++)
+{	int dig1 = 0, dig2 = 1, dig3 = 2;
+	while (dig1 != 8 && dig2 != 9 && dig3 != 10)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		putchar(dig1 + 48);
+		putchar(dig2 + 48);
+		putchar(dig3 + 48);
+		dig3++;
+		if (dig3 == 10 && dig2 != 9)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
-			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
-
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-					continue;
-				putchar(',');
-				putchar(' ');
-			}
+			dig2++;
+			dig3 = dig2 + 1;
+		}
+		if (dig2 == 9 && dig3 == 10)
+		{
+			dig1++;
+			dig2 = dig1 + 1;
+			dig3 = dig2 + 1;
+		}
+		if (dig1 != 8)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
