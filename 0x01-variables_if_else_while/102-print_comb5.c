@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
- * main
+ * main - Prints all possible combinations of two two-digit numbers,
+ *        ranging from 0-99, separated by a comma followed by a space.
  *
- * discription :  Prints all possible combinations of two two-digit number and th range between 0 and 99
- * Return: Always 0 (succsses)
+ * Return: Always 0.
  */
-
 int main(void)
 {
 	int num1, num2;
