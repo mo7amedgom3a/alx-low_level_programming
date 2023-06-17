@@ -3,7 +3,7 @@
 /**
  * main
  *
- * discription :  Prints all possible combinations of two two-digit number
+ * discription :  Prints all possible combinations of two two-digit number and th range between 0 and 99
  * Return: Always 0 (succsses)
  */
 
