@@ -10,14 +10,14 @@ int main(void)
 	unsigned long a = 0, b = 1, sum;
 	float sum_even = 0;
 
-	while (true)
+	while (1)
 	{
 		sum = a + b;
 		if (sum > 4000000)
 			break;
 
 		if (sum % 2 == 0)
-			sum_even += sum
+			sum_even += sum;
 
 		a = b;
 		b = sum;
