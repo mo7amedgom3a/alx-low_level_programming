@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+*puts_half - puts half of a string
+*@str: string
+*Return:void
+*/
+void puts_half(char *str)
+{
+	int l = strlen(str), i;
+
+	for (i = l / 2; i < l; i++)
+		_putchar(*(str + i));
+	_putchar('\n');
+}
