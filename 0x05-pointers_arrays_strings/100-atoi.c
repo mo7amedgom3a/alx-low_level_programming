@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int i, num, sig = 1;
+	int num, sig = 1;
 
 	if (*s == '-')
 	{
@@ -16,7 +16,7 @@ int _atoi(char *s)
 	while (*s != '\0')
 	{
 		num = num * 10 + (*s - '0');
-		i++;
+		*s++;
 	}
 	return (num * sig);
 }
