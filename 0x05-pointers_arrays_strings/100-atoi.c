@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int num = 0, sig = 1;
+	unsigned int num = 0, sig = 1;
 
 	do {
 		if (sig == '-')
