@@ -8,8 +8,6 @@ int _atoi(char *s)
 {
 	int i, num, sig = 1;
 
-	if (s[i] == '\0')
-		return (0);
 	if (s[i] == '-')
 	{
 		sig = -1;
