@@ -12,19 +12,17 @@ char *leet(char *s)
 	{
 		if (*s == 'a' || *s == 'A')
 			*s = '4';
-		else if (*s == 'e' || *s == 'E')
+		if (*s == 'e' || *s == 'E')
 			*s = '3';
 
-		else if (*s == 'L' || *s == 'l')
+		if (*s == 'L' || *s == 'l')
 			*s = '1';
 
-		else if (*s == 'O' || *s == 'o')
+		if (*s == 'O' || *s == 'o')
 			*s = '0';
 
-		else if (*s == 'T' || *s == 't')
+		if (*s == 'T' || *s == 't')
 			*s = '7';
-		else
-			continue;
 
 		s++;
 	}
