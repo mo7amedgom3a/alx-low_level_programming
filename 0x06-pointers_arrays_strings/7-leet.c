@@ -9,12 +9,11 @@ char *leet(char *s)
 	char *p = s;
 	char ch[] = {'A', 'E', 'O', 'T', 'L'};
 	int val[] = {4, 3, 0, 7, 1};
-	int size = sizeof(ch) / sizeof(char);
 	unsigned int i;
 
-	while (*S)
+	while (*s)
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < sizeof(ch) / sizeof(char); i++)
 		{
 			if ((*s == ch[i]) || (*s == ch[i] + 32))
 			{
