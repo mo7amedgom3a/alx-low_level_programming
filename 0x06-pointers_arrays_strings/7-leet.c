@@ -7,24 +7,22 @@
 char *leet(char *s)
 {
 	char *p = s;
+	char ch[] = {'A', 'E', 'O', 'T', 'L'};
+	int val[] = {4, 3, 0, 7, 1};
+	int size = sizeof(ch) / sizeof(char);
+	unsigned int i;
 
 	while (*S)
 	{
-		if (*s == 'a' || *s == 'A')
-			*s = '4';
-		if (*s == 'e' || *s == 'E')
-			*s = '3';
-
-		if (*s == 'L' || *s == 'l')
-			*s = '1';
-
-		if (*s == 'O' || *s == 'o')
-			*s = '0';
-
-		if (*s == 'T' || *s == 't')
-			*s = '7';
-
+		for (i = 0; i < size; i++)
+		{
+			if ((*s == ch[i]) || (*s == ch[i] + 32))
+			{
+				*s = 48 + val[i];
+			}
+		}
 		s++;
+
 	}
 	return (p);
 }
