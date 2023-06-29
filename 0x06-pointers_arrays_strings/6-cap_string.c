@@ -1,55 +1,30 @@
 #include "main.h"
 /**
- * lower - determine the lowercase
- * @c: character
- * Return 1 if true 0 if false
-*/
+ * cap_string - capitalizes all words of a string
+ * @s: input string.
+ * Return: the pointer to dest.
+ */
 
-int lower(char c)
+char *cap_string(char *s)
 {
-	return (c >= 97 && c <= 122);
-}
-/**
- * is_seperator - return true if is is_seperator
- * @c: character
-*/
+	int count = 0, i;
+	int sep[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-int is_seperator(char c)
-{
-	int i;
-	int sep[] = " \n\t,.!?\"(){}";
-
-	for (i = 0; i < 12; i++)
-		if (c == sep[i])
-			return (1);
-	return (0);
-}
-/**
- * cap_string - a function that capitalizes
- *              all words of a string
- *
- * @s: pointer to char input array
- *
- * Return: @s
-*/
-char *cap_string(char *c)
-{
-	char *p = c;
-	int is_sep = 1;
-
-	while (*p)
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
 	{
-		if (is_seperator(*c))
-			is_sep = 1;
-		else if (lower(*c) && is_sep)
+		for (i = 0; i < 13; i++)
 		{
-			*s -= 23;
-			is_sep = 0;
+			if (*(s + count) == sep[i])
+			{
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
+			}
 		}
-		else
-			is_sep = 0;
-		c++;
+		count++;
 	}
-	return (p);
+	return (s);
 }
-
