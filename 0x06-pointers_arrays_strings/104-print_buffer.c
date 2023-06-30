@@ -1,6 +1,4 @@
-#include "holberton.h"
-#include <stdio.h>
-
+#include "main.h"
 /**
  * isPrintableASCII - determines if n is a printable ASCII char
  * @n: integer
