@@ -8,12 +8,11 @@
  *
  * Return: Pointer
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack)
 	{
-		char *s = haystack;
+		char *src = haystack;
 		char *sub = needle;
 
 		while (*haystack && *sub && *haystack == *sub)
@@ -22,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 			sub++;
 		}
 		if (!*sub)
-			return (s);
+			return (src);
 		haystack = src + 1;
 	}
 	return (0);
