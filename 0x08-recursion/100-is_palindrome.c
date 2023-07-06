@@ -12,7 +12,7 @@
  */
 int is_palindrome_recursive(char *str, int start, int end)
 {
-	if (start <= end)
+	if (start >= end)
 		return (1);
 	if (str[start] != str[end])
 		return (0);
