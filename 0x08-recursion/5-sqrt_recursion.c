@@ -12,7 +12,7 @@ int check(int k, int n)
 {
 	if (k * k == n)
 		return (k);
-	if (k * k == n)
+	if (k * k >  n)
 		return (-1);
 	return (check(k + 1, n));
 }
