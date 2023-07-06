@@ -31,5 +31,5 @@ int is_palindrome(char *s)
 {
 	int size = strlen(s);
 
-	return (is_palindrome_recursive(str, 0, size - 1));
+	return (is_palindrome_recursive(s, 0, size - 1));
 }
