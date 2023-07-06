@@ -32,7 +32,7 @@ int identical(char *str1, char *str2, int i, int j)
 	{
 		return (0);
 	}
-	return (identical(str1, str2, i + 1));
+	return (identical(str1, str2, i + 1, j + 1));
 }
 /**
  * wildcmp - Compare two strings allowing for wildcard char
