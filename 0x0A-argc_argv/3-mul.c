@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include "main.h"
+
 /**
  * main - Entry point
  *
@@ -8,6 +10,7 @@
  *
  * Return: 0, Success or 1 fail
  */
+
 int main(int argc, char *argv[])
 {
 	int sum;
