@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - adds numbers
  * @argc: number of arguments passed to the function
@@ -21,13 +22,22 @@ int main(int argc, char *argv[])
 		{
 			flag = 0;
 			for (int j = 0; argv[i][j]; j++)
+			{
 				if (argv[i][j] >= '0' && argv[i][j] <= '9')
 					flag = 1;
+				else
+				{
+					flag = 0;
+					break;
+
+				}
 				else
 				{
 					printf("Error\n");
 					return (1);
 				}
+
+			}
 			if (flag)
 				sum += atoi(argv[i]);
 		}
