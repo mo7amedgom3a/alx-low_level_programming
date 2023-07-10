@@ -10,14 +10,16 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i, size = strlen(str) + 1;
+	unsigned int i, size;
 	char *ptr;
 
 
 	if (str == 0)
 		return (NULL);
 
-	ptr = (char *)malloc(size);
+	size = strlen(str) + 1;
+
+	ptr = malloc(size);
 
 
 	if (ptr == NULL)
