@@ -1,6 +1,10 @@
 #ifndef DOG
 #define DOG
 
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
 /**
  * struct dog - dog class
  *
