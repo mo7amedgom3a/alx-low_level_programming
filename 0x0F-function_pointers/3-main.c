@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
@@ -15,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int (*ptr)(int, int);
+	int a, b;
 
 	if (argc != 4)
 	{
@@ -35,8 +34,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-	printf("%d\n", ptr(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", ptr(a, b));
 
 	return (0);
 }
