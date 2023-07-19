@@ -1,4 +1,5 @@
 #include "3-calc.h"
+
 /**
  * op_add - Adds two numbers @a and @b
  *
@@ -8,6 +9,7 @@
  *
  * Return: Sum of @a and @b
  */
+
 int op_add(int a, int b)
 {
 	return (a + b);
@@ -22,6 +24,7 @@ int op_add(int a, int b)
  *
  * Return: Difference of @a and @b
  */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
@@ -36,6 +39,7 @@ int op_sub(int a, int b)
  *
  * Return: Product of @a and @b
  */
+
 int op_mul(int a, int b)
 {
 	return (a * b);
@@ -58,8 +62,10 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
+
 	return (a / b);
 }
+
 /**
  * op_mod - Calculates the remainder of @a divided by @b
  *
@@ -77,5 +83,6 @@ int op_mod(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
+
 	return (a % b);
 }
