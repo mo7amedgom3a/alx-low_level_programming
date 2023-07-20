@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned char *ptr = (unsigned char *)&main;
+	char *ptr = (char *)&main;
 	int num_bytes, i;
 
 	if (argc != 2)
@@ -37,6 +37,5 @@ int main(int argc, char *argv[])
 		}
 		printf("%02hhx ", ptr[i]);
 	}
-	printf("\n");
 	return (0);
 }
