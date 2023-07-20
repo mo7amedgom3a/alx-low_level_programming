@@ -28,9 +28,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < bytes; i++)
+	for (i = 0; i < num_bytes; i++)
 	{
-		if (i == bytes - 1)
+		if (i == num_bytes - 1)
 		{
 			printf("%02hhx\n", arr[i]);
 			break;
