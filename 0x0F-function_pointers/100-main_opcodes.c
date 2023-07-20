@@ -28,10 +28,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-
-	for (i = 0; i < num_bytes; i++)
-		printf("%02x", ptr[i]);
-
+	for (i = 0; i < bytes; i++)
+	{
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
+	}
 	printf("\n");
 	return (0);
 }
