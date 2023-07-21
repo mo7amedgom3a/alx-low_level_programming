@@ -36,7 +36,7 @@ void is_string(char *separator, va_list list)
 {
 	char *str = va_arg(list, char *);
 
-	if (!str)
+	if ((int)(!str))
 		str = "(nil)";
 	printf("%s%s", separator, str);
 }
