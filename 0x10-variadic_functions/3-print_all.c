@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == arr[j].ch)
 			{
-				arr[j].f(separator, list);
+				arr[j].ptr(separator, list);
 				separator = ", ";
 			}
 			j++;
