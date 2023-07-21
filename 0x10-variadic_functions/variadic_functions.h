@@ -7,7 +7,7 @@
 int _putchar(char c);
 typedef struct format
 {
-	char ch;
+	char *ch;
 	void(*ptr)(char *, va_list);
 }format_struct;
 int sum_them_all(const unsigned int n, ...);

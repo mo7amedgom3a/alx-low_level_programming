@@ -25,7 +25,7 @@ void is_int(char *separator, va_list list)
  */
 void is_float(char *separator, va_list list)
 {
-	printf("%s%f", separator, va_arg(list, float));
+	printf("%s%f", separator, va_arg(list, double));
 }
 /**
  * is_string - prints an string
@@ -62,7 +62,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (arr[j].ch)
 		{
-			if (format[i] == arr[j].ch)
+			if (format[i] == arr[j].ch[0])
 			{
 				arr[j].ptr(separator, list);
 				separator = ", ";
