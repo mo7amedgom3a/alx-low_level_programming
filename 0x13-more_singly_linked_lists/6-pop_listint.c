@@ -10,7 +10,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *node;
-	size_t data;
+	int data;
 
 	if (!*h)
 		return (0);
