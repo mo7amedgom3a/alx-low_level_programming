@@ -9,16 +9,16 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *node_to_delete;
+	listint_t *node;
 	int n;
 
 	if (*head == NULL)
 		return (0);
 
-	node_to_delete = *head;
-	*head = node_to_delete->next;
-	n = node_to_delete->n;
-	free(node_to_delete);
+	node= *head;
+	*head = node->next;
+	n = node->n;
+	free(node);
 
 	return (n);
 }
