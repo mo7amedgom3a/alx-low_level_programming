@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(arr);
 		return (0);
 	}
-	size = read(file, text, sizeof(char) * letters);
+	size = read(file, arr, sizeof(char) * letters);
 	if (size == -1)
 	{
 		free(arr);
